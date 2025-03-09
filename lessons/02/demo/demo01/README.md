@@ -20,7 +20,7 @@ python receiver.py --host <broker_host> --port <port> --topic <topic>
 or use the provided shell script:
 ```bash
 # This will automatically install the paho-mqtt library
-./run-receiver.sh --host <broker_host> --port <port> --topic <topic> --message <message>
+./run-receiver.sh --host <broker_host> --port <port> --topic <topic>
 ```
 
 ### Example:  
