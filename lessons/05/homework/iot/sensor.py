@@ -16,7 +16,7 @@ TIMESTAMP_FMT = "%Y-%m-%d %H:%M:%S"
 # Predefined stations, locations, and measurement ranges
 STATIONS = {
     "London (UK)": {
-        "stations": ["iot-jp-01", "iot-jp-02"],
+        "stations": ["iot-uk-01", "iot-uk-02"],
         "measurements": {
             "temperature": {
                 "lower_bound": 15,

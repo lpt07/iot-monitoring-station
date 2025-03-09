@@ -1,0 +1,21 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    ports:
+      # TODO 1: Forward ports (remember the default MQTT port)
+    volumes:
+      # TODO 2: Mount ./mosquitto/mosquitto.conf for correct broker initialization
+  
+  backend:
+    build: # TODO 3: Fill the path to the backend Dockerfile
+    env_file: # TODO 4: Fill the path to the .env file
+    depends_on:
+      # TODO 5: What services does the backend depend on?
+
+  influxdb:
+    image: influxdb:1.8
+    ports:
+      # TODO 6: Forward ports (remember the default InfluxDB port)
+    volumes:
+      # TODO 7: Mount ./influxdb/init-db.sh for correct DB initialization
+      # TODO 8: Mount the influxdb/persistent/influxdb volume for persistent data storage
