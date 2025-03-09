@@ -7,6 +7,8 @@ This script connects to an MQTT broker, publishes a message to a specified topic
 - Publishes a message to a specified topic
 - Logs connection and disconnection events
 
+You can check if messages are sent successfully by accessing: https://testclient-cloud.mqtt.cool/
+
 ## Usage:
 Run the script using:
 ```bash

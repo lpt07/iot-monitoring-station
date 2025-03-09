@@ -85,7 +85,7 @@ def create_mqtt_sender(
     Client
         A configured and connected MQTT client.
     """
-    logger.info("Creating MQTT sender...")
+    logger.info(f"Creating MQTT sender: host={host}, port={port}")
 
     # Define callback when client connects
     def on_connect(client, userdata, flags, reason_code):
@@ -164,8 +164,8 @@ def parse_arguments() -> argparse.Namespace:
         "--host",
         required=False,
         type=str,
-        default="broker.mqtt.cool",
-        help="The MQTT broker's hostname or IP address. Default: broker.mqtt.cool"
+        default="localhost",
+        help="The MQTT broker's hostname or IP address. Default: localhost"
     )
 
     parser.add_argument(

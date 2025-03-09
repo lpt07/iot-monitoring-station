@@ -8,6 +8,8 @@ This script connects to an MQTT broker, subscribes to a specified topic, and log
 - Logs incoming messages with timestamps  
 - Handles connection and disconnection events  
 
+You can send custom messages to the script by accessing: `https://testclient-cloud.mqtt.cool/`
+
 ## Usage:  
 Run the script using:  
 ```bash
