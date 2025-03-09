@@ -1,0 +1,2 @@
+# Not sure why, but it didn't work on WSL without specifying the version
+paho-mqtt==1.6.1
