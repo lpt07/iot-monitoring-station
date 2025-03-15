@@ -2,4 +2,4 @@
 
 pip install -r requirements.txt &> /dev/null
 
-python sensor.py
+python sensor.py "$@"
