@@ -28,7 +28,7 @@ MEASUREMENTS = {
 # List of possible locations and stations
 STATIONS = {
     "London (UK)": {
-        "stations": ["iot-jp-01", "iot-jp-02"],
+        "stations": ["iot-uk-01", "iot-uk-02"],
     },
     "New York (US)": {
         "stations": ["iot-us-01", "iot-us-02", "iot-us-03"],
