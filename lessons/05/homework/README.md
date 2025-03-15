@@ -140,3 +140,12 @@ To stop and remove all containers, networks, and volumes, run:
 ```bash
 source clean.sh
 ```
+
+## NOTE
+
+If you encounter permission errors for the InfluxDB container, you might need to offer read and write (rw) permissions for the influxdb/persistent/influxdb folder.
+
+```bash
+# Recursively set read/write permissions on all files
+sudo chmod -R a+rw influxdb/persistent
+```

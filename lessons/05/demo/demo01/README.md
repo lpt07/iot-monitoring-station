@@ -68,3 +68,12 @@ The `writer.sh` script generates random sensor data (temperature, humidity, batt
 cd writer
 source run_writer.sh
 ```
+
+## NOTE
+
+If you encounter permission errors for the InfluxDB container, you might need to offer read and write (rw) permissions for the persistent/influxdb folder.
+
+```bash
+# Recursively set read/write permissions on all files
+sudo chmod -R a+rw persistent
+```

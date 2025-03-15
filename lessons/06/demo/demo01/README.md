@@ -223,3 +223,15 @@ docker-compose down
 ```
 
 This will remove the containers and any persistent data volumes used by the services.
+
+## NOTE
+
+If you encounter permission errors for the Grafana container, you might need to offer read and write (rw) permissions for the grafana/persistent folder.
+
+```bash
+# Create the folder if it doesn't exist
+mkdir -p grafana/persistent
+
+# Recursively set read/write permissions on all files
+sudo chmod -R a+rw grafana/persistent
+```
