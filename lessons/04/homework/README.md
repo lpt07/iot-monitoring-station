@@ -1,4 +1,4 @@
-# Lesson 03 - Homework
+# Lesson 04 - Homework
 
 In this homework, you will set up a Docker Compose file containing three services:
 
