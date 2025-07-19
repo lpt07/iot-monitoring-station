@@ -54,7 +54,8 @@ def create_mqtt_client(
         client.on_disconnect = on_disconnect
 
     # Connect to the broker
-    client.connect(host, port=port, keepalive=keep_alive)
+    # client.connect(host, port=port, keepalive=keep_alive)
+    client.connect("broker.mqtt.cool", 1883)
 
     return client
 

@@ -7,6 +7,10 @@ import typing
 logger = logging.getLogger(__name__)
 
 
+# tạo client, định nghĩa callback mặc định để log thông tin khi:
+# - kết nối thành công
+# - nhận message (in ra topic + payload)
+# - ngắt kết nối
 def create_mqtt_client(
     host: str,
     port: int = 1883,
@@ -58,7 +62,8 @@ def create_mqtt_client(
         client.on_disconnect = on_disconnect
 
     # Connect to the broker
-    client.connect(host, port=port, keepalive=keep_alive)
+    # client.connect(host, port=port, keepalive=keep_alive)
+    client.connect("localhost", 1883)
 
     return client
 

@@ -10,3 +10,21 @@ services:
       # Mount local configuration file (read-only)
       # This ensures Mosquitto uses your custom configuration file (mosquitto.conf)
       - ./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+
+
+## đoạn cấu trong docker-compose.yaml định nghĩa 1 service tên là mosquitto, dùng để khởi chạy Mosquitto MQTT Broker, giúp các container khác như sender, recieiver gửi và nhận dữ liệu qua giao thức MQTT
+
+## services:
+##   mosquitto:
+##     image: eclipse-mosquitto:latest
+## dùng hình ảnh chính thức từ Docker Hub tên là enclipse-mosquitto: latest để tạo container chạy Mosquitto
+
+## mở cổng 1883 bên trong container ra bên ngoài máy host. Cú pháp hostPort:containerPort nghĩa là Port 1883 trên máy bạn | sẽ chuyển tiếp tới port 1883 bên trong container (nơi Mosquitto lắng nghe kết nooiso MQTT)
+
+## gắn file mosquitto.còn ở máy local của bạn vào container để cấu hình Móquitto
+## :ro nghĩa là read-only (chỉ đọc), không cho container chỉnh sửa file này
+
+## Mục đích tổng thể
+##1. khởi chạy Mosquitto MQTT Broker đúng cấu hình
+##2. Kết nối được từ các container khác (sender, reciever) qua địa chỉ mosquitto:1883
+##3. Expose port 1883 để kiểm thử từ máy thật nếu cần

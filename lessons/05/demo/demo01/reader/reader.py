@@ -112,3 +112,27 @@ def parse_arguments() -> argparse.Namespace:
 if __name__ == "__main__":
     # Parse arguments and run the main function
     main(parse_arguments())
+
+
+# chức năng:
+# - kết nối đến InfluxDB, đọc dữ liệu từ một measurement cụ thể trong khoảng thời gian 5 phút gần nhất, và ghi log các kết quả.
+# - Hiện thị số bản ghi và in tối đa 5 bản gần nhất 
+
+# 2. main(args)
+# Chạy vòng lặp vô hạn:
+
+# B1: Kết nối đến InfluxDB thông qua InfluxDBClient(...).
+
+# B2: Tính start_timestamp = hiện tại trừ đi 5 phút → đổi sang nanoseconds.
+
+# B3: Tạo câu lệnh truy vấn SQL:
+
+# B4: Lấy kết quả, in ra số lượng bản ghi, và in ra tối đa 5 dòng gần nhất.
+
+# B5: Ngủ 5 giây rồi lặp lại.
+
+# ỨNG DỤNG THỰC TẾ:
+# - Giám sát dữ liệu cảm biến đang được gửi đến InfluxDB
+# - Kiểm tra xem hệ thống thu nhập dữ liệu có đang hoạt động không
+# - In dữ liệu thô ra màn hình để debug
+

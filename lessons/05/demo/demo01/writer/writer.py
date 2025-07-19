@@ -181,3 +181,10 @@ def parse_arguments() -> argparse.Namespace:
 if __name__ == "__main__":
     # Parse arguments and run the main function
     main(parse_arguments())
+
+
+
+# mục đích chính:
+# - giả lập dữ liệu cảm biến cho các trạm IoT ở các thành phố khác nhau
+# - dữ liệu bao gồm: nhiệt độ, độ ẩm, print
+# - Ghi dữ liệu vào InfluxDB qua class InfluxDBClient
