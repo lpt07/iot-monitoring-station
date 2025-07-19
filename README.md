@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IoT Monitoring Station
 Welcome to the IoT Monitoring Station project repository, developed by Robert-Adrian Popovici (Computer Science Fellow) in collaboration with Open Avenues.
 
@@ -59,3 +60,6 @@ Visualize data using Grafana dashboards.
 Deploy and manage containerized applications using Docker and Docker Compose.
 This project not only gives students practical experience with IoT systems, but also provides hands-on exposure to essential tools and technologies used in the industry, including MQTT, InfluxDB, Grafana, and Docker.
 
+=======
+# iot-monitoring-station
+>>>>>>> 4bafd952de00dfc8cfd6d2c35f333a882c096ca6
